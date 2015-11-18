@@ -29,3 +29,12 @@ all buttons and encoders (last is implicit since thats the output)
 Have fun!
 Kind regards,
 Hans
+
+P.S.: Please note that included in this project
+there are two other projects,
+namely
+proof-of-concept/hidapi
+proof-of-concept/pyhidapi
+both of which have their own license
+and are not subject to the license of this project
+
