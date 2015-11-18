@@ -14,7 +14,7 @@ and pyhidapi first.
 
 Then connect Maschine and:
 $ cd proof-of-concept
-$ sudo ./talk-with-maschine.py
+$ ./proof-of-concept.sh
 
 if you want to put your own images on the displays,
 you can use GIMP to create an xbm file like the
@@ -25,6 +25,16 @@ to create the hex string and then read them in with python.
 This includes setting all the button leds,
 the displays and reading
 all buttons and encoders (last is implicit since thats the output)
+For the output the lines that start with 20...
+they are the reports corresponding to the 16 padsi.
+Those messages are sent all the time.
+It should be pretty obvious as you operate them which pad
+corresponds to which part of the hex string.
+
+If you filter them out with
+$ ./proof-of-concept.sh | grep -v ": 20"
+then the output shows the other buttons and encoders
+whose report start with 10...
 
 Have fun!
 Kind regards,
